@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <title>Techie Club</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Template by CocoBasic" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="author" content="CocoBasic" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='style.css' />
+
+    <!--[if lt IE 9]>
+                <script src="js/html5shiv.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]-->
+</head>
+
+<body class="single single-post">
+
+    <div class="site-wrapper">
+
+        <div class="doc-loader">
+            <img src="images/preloader.gif" alt="Seppo">
+        </div>
+
+        <header class="header-holder">
+            <div class="menu-wrapper center-relative relative">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Seppo">
+                    </a>
+                </div>
+
+                <div class="toggle-holder">
+                    <div id="toggle">
+                        <div class="first-menu-line"></div>
+                        <div class="second-menu-line"></div>
+                        <div class="third-menu-line"></div>
+                    </div>
+                </div>
+
+                <div class="menu-holder">
+                    <nav id="header-main-menu">
+                        <ul class="main-menu sm sm-clean">
+                            <li>
+                                <a href="http://localhost/techieClub/index.html#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/techieClub/index.html#about">Club Info</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/techieClub/index.html#activity">Activity</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/techieClub/index.html#contact">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="register.html">Registration</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+
+        <div id="content" class="site-content center-relative">
+            <article>
+                <div class="post-wrapper center-relative">
+                    <h1 class="entry-title">
+                        Techie Club Registration
+                    </h1>
+                    <div class="single-post-featured-image">
+                        <img src="images/about-us.jpg" alt="" />
+                    </div>
+
+                    <div class="single-content-wrapper content-1170 center-relative">
+                        <div class="post-info-wrapper">
+                            <div class="sticky-spacer">
+                                <div class="entry-info">
+                                    <div>
+                                        <div class="text-holder">REMARKS</div>
+                                        <div class="author-nickname">
+                                            <a href="#" title="Posts by John Williams" rel="author">
+                                                Please enter data correctly.
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="entry-content">
+                            <div class="contact-form">
+                                <form action="register.php" method="post" role="form" name="register">
+                                    <div class="form-group mt-3">
+                                        <input type="text" name="STUD_NAME" class="form-control" id="STUD_NAME" placeholder="Your Name" maxlength="50" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="email" class="form-control" name="STUD_EMAIL" id="STUD_EMAIL" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" name="STUD_IC" class="form-control" id="STUD_IC" placeholder="Your IC Number" maxlength="12" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" name="STUD_USERNAME" class="form-control" id="STUD_USERNAME" placeholder="Your Username" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="password" name="STUD_PASSWORD" class="form-control" id="STUD_PASSWORD" placeholder="Your Password" minlength="5" maxlength="12" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="text" name="STUD_ADDRESS" class="form-control" id="STUD_ADDRESS" placeholder="Your Home Address" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="radio" id="gender1" name="STUD_GENDER" value="Female">
+                                        <label for="gender1">Female</label><br>
+                                        <input type="radio" id="gender2" name="STUD_GENDER" value="Male">
+                                        <label for="gender2">Male</label><br>
+                                        <input type="radio" id="gender3" name="STUD_GENDER" value="Rather Not To Say">
+                                        <label for="gender3">Rather Not To Say</label><br><br>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <select name="STUD_CLASS" id="STUD_CLASS">
+                                            <option value="classA">M3CS2306A</option>
+                                            <option value="classB">M3CS2306B</option>
+                                            <option value="classC">M3CS2306C</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="number" name="STUD_AGE" class="form-control" id="STUD_AGE" placeholder="Your Age" required>
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        <input type="number" name="STUD_PHONE" class="form-control" id="STUD_PHONE" placeholder="Your Phone Number" required>
+                                    </div>
+                                    <div class="text-center"><button type="submit" name="save">Register</button></div>
+                                    <div class="text-center"><button type="reset">Reset</button></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content center-relative">
+                <div class="footer-logo">
+                    <img src="images/footer_logo.png" alt="Seppo" />
+                </div>        
+                <div class="footer-logo-divider"></div>
+                <div class="footer-mail">            
+                    <a href="mailto:hello@site.com">hello@techiclub.com</a>
+                </div>
+                <div class="footer-social-divider"></div>
+                <div class="social-holder">
+                    <a href="#">
+                        <span class="fa fa-twitter"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-behance"></span>
+                    </a>
+                    <a href="#">
+                        <span class="fa fa-dribbble"></span>
+                    </a>
+                </div>
+
+                <div class="copyright-holder">
+                    © 2022 Designed By <a href="https://bysyahmina.com">Nurul Syahmina</a>            
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--Load JavaScript-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/tipper.js"></script>
+    <script src="js/jarallax.js"></script>
+    <script src="js/jarallax-element.min.js"></script>
+    <script src='js/imagesloaded.pkgd.js'></script>
+    <script src='js/jquery.fitvids.js'></script>
+    <script src='js/jquery.smartmenus.min.js'></script>
+    <script src='js/isotope.pkgd.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src='js/jquery.sticky-kit.min.js'></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>

@@ -788,12 +788,21 @@ a.button-dot:hover:before {
 ====================================== */
 
 #home {    
-    background-image: url(images/hero_image_01.jpg);
+    background-image: url(images/hero-1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh - 77px);    
     display: flex;
+}
+#home:before {    
+    content:'';
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 #home .section-wrapper {
