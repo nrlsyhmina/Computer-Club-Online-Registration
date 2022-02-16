@@ -1859,6 +1859,7 @@ body.blog {
 
 .contact-form input[type=text], 
 .contact-form input[type=email], 
+.contact-form input[type=number], 
 .contact-form textarea {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -1880,6 +1881,7 @@ body.blog {
 
 .contact-form input[type=text]::placeholder, 
 .contact-form input[type=email]::placeholder, 
+.contact-form input[type=number]::placeholder, 
 .contact-form textarea::placeholder {
     font-family: 'Rubik', sans-serif;
     color: #000;
@@ -1891,6 +1893,7 @@ body.blog {
 
 .contact-form input[type=text]:ms-input-placeholder, 
 .contact-form input[type=email]:ms-input-placeholder, 
+.contact-form input[type=number]:ms-input-placeholder, 
 .contact-form textarea:ms-input-placeholder {
     font-family: 'Rubik', sans-serif;
     color: #000;
@@ -1901,6 +1904,7 @@ body.blog {
 
 .contact-form input[type=text]::ms-input-placeholder, 
 .contact-form input[type=email]::ms-input-placeholder, 
+.contact-form input[type=number]::ms-input-placeholder, 
 .contact-form textarea::ms-input-placeholder {
     font-family: 'Rubik', sans-serif;
     color: #000;

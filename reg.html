@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Hello World</title>
+</head>
+<body>
+ 
+First name: <input id="first_name">
+Last name: <input id="last_name">
+
+    <input type="text" name="STUD_NAME" class="form-control" id="STUD_NAME" placeholder="Your Name" maxlength="50" required>
+
+    <input type="email" class="form-control" name="STUD_EMAIL" id="STUD_EMAIL" placeholder="Your Email" required>
+
+
+    <input type="text" name="STUD_IC" class="form-control" id="STUD_IC" placeholder="Your IC Number" maxlength="12" required>
+
+
+    <input type="text" name="STUD_USERNAME" class="form-control" id="STUD_USERNAME" placeholder="Your Username" required>
+
+
+    <input type="text" name="STUD_PASSWORD" class="form-control" id="STUD_PASSWORD" placeholder="Your Password" minlength="5" maxlength="12" required>
+
+    <input type="text" name="STUD_ADDRESS" class="form-control" id="STUD_ADDRESS" placeholder="Your Home Address" required>
+
+
+    <input type="radio" id="gender1" name="STUD_GENDER" value="Female">
+    <label for="gender1">Female</label><br>
+    <input type="radio" id="gender2" name="STUD_GENDER" value="Male">
+    <label for="gender2">Male</label><br>
+    <input type="radio" id="gender3" name="STUD_GENDER" value="Rather Not To Say">
+    <label for="gender3">Rather Not To Say</label><br><br>
+
+
+    <select name="STUD_CLASS" id="STUD_CLASS">
+        <option value="classA">M3CS2306A</option>
+        <option value="classB">M3CS2306B</option>
+        <option value="classC">M3CS2306C</option>
+    </select>
+
+
+    <input type="number" name="STUD_AGE" class="form-control" id="STUD_AGE" placeholder="Your Age" required>
+
+
+    <input type="number" name="STUD_PHONE" class="form-control" id="STUD_PHONE" placeholder="Your Phone Number" required>
+
+<button id="say">Say hi!</button>
+ 
+<hr>
+<div id="result"></div>
+ 
+<script>
+function say_hi() {
+    
+    var STUD_NAME = document.getElementById('STUD_NAME').value; 
+    var STUD_EMAIL = document.getElementById('STUD_EMAIL').value;
+   var STUD_IC = document.getElementById('STUD_IC').value;
+   var STUD_USERNAME = document.getElementById('STUD_USERNAME').value;
+   var STUD_PASSWORD = document.getElementById('STUD_PASSWORD').value;
+   var STUD_ADDRESS = document.getElementById('STUD_ADDRESS').value;
+   var STUD_CLASS = document.getElementById('STUD_CLASS').value;
+   var STUD_AGE = document.getElementById('STUD_AGE').value;
+   var STUD_PHONE = document.getElementById('STUD_PHONE').value;
+ 
+    var html = 'Hello <b>' + STUD_NAME + '</b> ' + STUD_EMAIL;
+ 
+    document.getElementById('result').innerHTML = html;
+}
+ 
+document.getElementById('say').addEventListener('click', say_hi);
+</script>
+ 
+</body>
+</html>

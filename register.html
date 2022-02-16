@@ -1,198 +1,324 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Techie Club</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
 
-<head>
-    <title>Techie Club</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Template by CocoBasic" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-    <meta name="author" content="CocoBasic" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="shortcut icon" href="images/favicon.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Rubik:400,700,700i' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href='style.css' />
-
-    <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>            
-                <script src="js/respond.min.js"></script>                   
-        <![endif]-->
-</head>
-
-<body class="single single-post">
-
-    <div class="site-wrapper">
-
-        <div class="doc-loader">
-            <img src="images/preloader.gif" alt="Seppo">
-        </div>
-
-        <header class="header-holder">
-            <div class="menu-wrapper center-relative relative">
-                <div class="header-logo">
-                    <a href="index.html">
-                        <img src="images/logo.png" alt="Seppo">
-                    </a>
-                </div>
-
-                <div class="toggle-holder">
-                    <div id="toggle">
-                        <div class="first-menu-line"></div>
-                        <div class="second-menu-line"></div>
-                        <div class="third-menu-line"></div>
-                    </div>
-                </div>
-
-                <div class="menu-holder">
-                    <nav id="header-main-menu">
-                        <ul class="main-menu sm sm-clean">
-                            <li>
-                                <a href="http://localhost/techieClub/index.html#home">Home</a>
-                            </li>
-                            <li>
-                                <a href="http://localhost/techieClub/index.html#about">Club Info</a>
-                            </li>
-                            <li>
-                                <a href="http://localhost/techieClub/index.html#activity">Activity</a>
-                            </li>
-                            <li>
-                                <a href="http://localhost/techieClub/index.html#contact">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="register.html">Registration</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </header>
-
-        <div id="content" class="site-content center-relative">
-            <article>
-                <div class="post-wrapper center-relative">
-                    <h1 class="entry-title">
-                        Techie Club Registration
-                    </h1>
-                    <div class="single-post-featured-image">
-                        <img src="images/about-us.jpg" alt="" />
-                    </div>
-
-                    <div class="single-content-wrapper content-1170 center-relative">
-                        <div class="post-info-wrapper">
-                            <div class="sticky-spacer">
-                                <div class="entry-info">
-                                    <div>
-                                        <div class="text-holder">REMARKS</div>
-                                        <div class="author-nickname">
-                                            <a href="#" title="Posts by John Williams" rel="author">
-                                                Please enter data correctly.
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+       
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">REGISTRATION PAGE</div>
+                <form name="frm_register" method="post">
+                    <br>
+                   
+                    <div class="row align-items-stretch mb-5" >
+                        <div class="col-md-7">
+                            <table class="tb1" border="0">
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Name :</font> &nbsp;
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="stdname" name="stdname" type="text" placeholder="Your Name *" size="50">
+                                        <font style="color: red;"><p id="err_uname"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Ic Number : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="stdIc" name="stdIc" type="text" placeholder="Your IC Number *" size="12" />
+                                        <font style="color: red;"><p id="err_ic"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Email : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="stdemail" name="stdemail" type="text" placeholder="Your Email Address *" size="12" />
+                                        <font style="color: red;"><p id="err_mail"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Address : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <textarea class="form-control" placeholder="Your Home Address *" name="stdaddress" id="stdaddress"></textarea>
+                                        <font style="color: red;"><p id="err_address"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Interest : </font>&nbsp;
+                                    </td>
+                                    <td align="left">
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Learn to code"/><font style="color: black;"> Learn to code </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Learn to repair computer"/><font style="color: black;"> Learn to repair computer </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Learn to use Word"/><font style="color: black;"> Learn to use Word </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Learn to use Excel"/><font style="color: black;"> Learn to use Excel </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Explore more software "/><font style="color: black;"> Explore more software </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Develop game"/><font style="color: black;"> Develop game </font><br>
+                                        <input type="checkbox" id="stdinterest" name="stdinterest[]" value="Learn Artificial Intelligence"/><font style="color: black;"> Learn Artificial Intelligence </font>
+                                        <font style="color: red;"><p id="err_interest"></p></font>
+                                    </td>
+                                </tr>
+                            </table> 
                         </div>
-
-                        <div class="entry-content">
-                            <div class="contact-form">
-                                <form action="register.php" method="post" role="form" name="register">
-                                    <div class="form-group mt-3">
-                                        <input type="text" name="STUD_NAME" class="form-control" id="STUD_NAME" placeholder="Your Name" maxlength="50" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="email" class="form-control" name="STUD_EMAIL" id="STUD_EMAIL" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" name="STUD_IC" class="form-control" id="STUD_IC" placeholder="Your IC Number" maxlength="12" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" name="STUD_USERNAME" class="form-control" id="STUD_USERNAME" placeholder="Your Username" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="password" name="STUD_PASSWORD" class="form-control" id="STUD_PASSWORD" placeholder="Your Password" minlength="5" maxlength="12" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="text" name="STUD_ADDRESS" class="form-control" id="STUD_ADDRESS" placeholder="Your Home Address" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="radio" id="gender1" name="STUD_GENDER" value="Female">
-                                        <label for="gender1">Female</label><br>
-                                        <input type="radio" id="gender2" name="STUD_GENDER" value="Male">
-                                        <label for="gender2">Male</label><br>
-                                        <input type="radio" id="gender3" name="STUD_GENDER" value="Rather Not To Say">
-                                        <label for="gender3">Rather Not To Say</label><br><br>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <select name="STUD_CLASS" id="STUD_CLASS">
+                        <div class="col-md-5">
+                            <table class="tb1" border="0" style="width: 400px;">
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Gender : </font>&nbsp;
+                                    </td>
+                                    <td align="left">
+                                        <input id="stdgender" type="radio" name="stdgender" value="Male"> <font style="color: black;">Male</font><br>
+                                        <input id="stdgender" type="radio" name="stdgender" value="Female"> <font style="color: black;">Female</font>
+                                        <font style="color: red;"><p id="err_gender"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Age : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input id="stdage" type="number" name="stdage" class="form-control"/>
+                                        <font style="color: red;"><p id="err_age"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Class : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <select class="form-control" id="stdclass" name="stdclass">
                                             <option value="classA">M3CS2306A</option>
                                             <option value="classB">M3CS2306B</option>
                                             <option value="classC">M3CS2306C</option>
                                         </select>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="number" name="STUD_AGE" class="form-control" id="STUD_AGE" placeholder="Your Age" required>
-                                    </div>
-                                    <div class="form-group mt-3">
-                                        <input type="number" name="STUD_PHONE" class="form-control" id="STUD_PHONE" placeholder="Your Phone Number" required>
-                                    </div>
-                                    <div class="text-center"><button type="submit" name="save">Register</button></div>
-                                    <div class="text-center"><button type="reset">Reset</button></div>
-                                </form>
-                            </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="vertical-align:top;">
+                                        <font style="color: black;">Telephone : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input type="text" id="stdtel" name="stdtel" class="form-control"/>
+                                        <font style="color: red;"><p id="err_tnum"></p></font>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="2"><font style="color: red;"><p id="demo"></p></font></td>
+                                </tr>-->
+                            </table>
                         </div>
-                        <div class="clear"></div>
+                       
+                        <div class="col-md-5">
+                            <table class="tb1" border="0" style="width: 400px;">
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">User Name : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="stduname" name="stduname" type="text" placeholder="Your User Name *" size="12" />
+                                        <font style="color: red;"><p id="err_stduname"></p></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left">
+                                        <font style="color: black;">Password : </font>&nbsp;
+                                    </td>
+                                    <td>
+                                        <input class="form-control" id="stdpassword" name="stdpassword" type="password" placeholder="Password *" size="12" />
+                                        <font style="color: red;"><p id="err_pass"></p></font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <button style="margin-left: 65%;" class="btn btn-success btn-lg text-uppercase bttn" type="button" id ="register" onclick="validateForm()" name="btn_submit">register</button>
+                        <button class="btn btn-primary btn-lg text-uppercase bttn" type="reset" name="btn_reset">Reset</button>
                     </div>
-                </div>
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content center-relative">
-                <div class="footer-logo">
-                    <img src="images/footer_logo.png" alt="Seppo" />
-                </div>        
-                <div class="footer-logo-divider"></div>
-                <div class="footer-mail">            
-                    <a href="mailto:hello@site.com">hello@techiclub.com</a>
-                </div>
-                <div class="footer-social-divider"></div>
-                <div class="social-holder">
-                    <a href="#">
-                        <span class="fa fa-twitter"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-facebook"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-behance"></span>
-                    </a>
-                    <a href="#">
-                        <span class="fa fa-dribbble"></span>
-                    </a>
-                </div>
-
-                <div class="copyright-holder">
-                    © 2022 Designed By <a href="https://bysyahmina.com">Nurul Syahmina</a>            
-                </div>
+                </form>
+                <div id = "result"></div>
             </div>
-        </footer>
-    </div>
+        </header>
+        <script>
+            function validateForm(){
+                let val;
+                let text;
+                //VALIDATE FULL NAME
+                let stdname = document.getElementById("stdname").value;
+                if (stdname.length > 50 )
+                {
+                    text = "Your input exceeds 50 characters!!";
+                    document.getElementById("err_uname").innerHTML = text;
+                    val = false;
+                }
+                if (!stdname)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_uname").innerHTML = text;
+                    val = false;
+                }
+                //VALIDATE IC NUMBER
+                let ic_num = document.getElementById("stdIc").value;
+                if (ic_num.length > 12 || ic_num.length < 12 )
+                {
+                    text = "Please enter the 12 digits of IC number without '-'";
+                    document.getElementById("err_ic").innerHTML = text;
+                    val = false;
+                }
+                if (!ic_num)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_ic").innerHTML = text;
+                    val = false;
+                }
+                //VALIDATE EMAIL
+                let email = document.getElementById("stdemail").value;
+                if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)))
+                {
+                    text = "Please enter the valid email form ie. meton@gmail.com";
+                    document.getElementById("err_mail").innerHTML = text;
+                    val = false;
+                }
+                if (!email)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_mail").innerHTML = text;
+                    val = false;
+                }
+                //VALIDATE ADDRESS
+                let address = document.getElementById("stdaddress").value;
+                if (!address)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_address").innerHTML = text;
+                    val = false;
+                }
+                //VALIDATE INTEREST
+                var checkBoxes = document.getElementsByClassName( 'stdinterest' );
+                var isChecked = false;
+                for (var i = 0; i < checkBoxes.length; i++) {
+                    if ( checkBoxes[i].checked ) {
+                        isChecked = true;
+                    };
+                };
+                if (isChecked) {
+                    text = "Please, check at least one checkbox!";
+                    document.getElementById("err_interest").innerHTML = text;
+                    val = false;
+                }  
+                //VALIDATE PHONE NUMBER
+                let x = document.getElementById("stdtel").value;
+                if (!/^[0-9]+$/.test(x)) {
+                   text = "Input not numbers";
+                   document.getElementById("err_tnum").innerHTML = text;
+                   val = false;
+                } 
+                if (!x) {
+                   text = "Please fill in this field";
+                   document.getElementById("err_tnum").innerHTML = text;
+                   val = false;
+                }
+                //VALIDATE GENDER RADIOBOX
+                var radios = document.getElementsByName("stdgender");
+                checked = false;
+                for (var i = 0, len = radios.length; i < len; i++) {
+                    if (radios[i].checked) {
+                        checked = true;
+                    }
+                }
+                if (!checked ) {
+                    text = "Please, check at least one input!";
+                    document.getElementById("err_gender").innerHTML = text;
+                    val = false;
+                } 
+                //VALIDATE AGE
+                let age = document.getElementById("stdage").value;
+                if (!/^[0-9]+$/.test(age)) {
+                   text = "Input not numbers";
+                   document.getElementById("err_age").innerHTML = text;
+                   val = false;
+                } 
+                if (!age) {
+                   text = "Please fill in this field";
+                   document.getElementById("err_age").innerHTML = text;
+                   val = false;
+                }
+                //VALIDATE USERNAME
+                let stduname = document.getElementById("stduname").value;
+                if (stduname.length <5 || stduname.length >20)
+                {
+                    text = "Your input must be in range of 5-20 characters only!!";
+                    document.getElementById("err_stduname").innerHTML = text;
+                    val = false;
+                }
+                if (!stduname)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_stduname").innerHTML = text;
+                    val = false;
+                }
+                //VALIDATE PASSWORD
+                let pass = document.getElementById("stdpassword").value;
+                if (pass.length <5 || pass.length >20)
+                {
+                    text = "Your password must be in range of 5-20 characters only!!";
+                    document.getElementById("err_pass").innerHTML = text;
+                    val = false;
+                }
+                if (!pass)
+                {
+                    text = "Please fill in this field";
+                    document.getElementById("err_pass").innerHTML = text;
+                    val = false;
+                }
+    
+               
+                var html = 'Hello <b>' + stdname + '</b> '
+                + '<br>' + ic_num
+                + '<br>' + email
+                + '<br>' + x
+                + '<br>' + age
+                + '<br>' + stduname
+                + '<br>' + pass
 
-    <!--Load JavaScript-->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/tipper.js"></script>
-    <script src="js/jarallax.js"></script>
-    <script src="js/jarallax-element.min.js"></script>
-    <script src='js/imagesloaded.pkgd.js'></script>
-    <script src='js/jquery.fitvids.js'></script>
-    <script src='js/jquery.smartmenus.min.js'></script>
-    <script src='js/isotope.pkgd.js'></script>
-    <script src='js/owl.carousel.min.js'></script>
-    <script src='js/jquery.sticky-kit.min.js'></script>
-    <script src='js/main.js'></script>
-</body>
-
+            document.getElementById('result').innerHTML = html;
+            }
+            document.getElementById('register').addEventListener('click', validateForm);
+        </script>
+        <script>
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
